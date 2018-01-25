@@ -1,0 +1,28 @@
+#+EXPORT_FILE_NAME: README.md
+#+OPTIONS: toc:nil
+
+* alert_when_done
+
+Alert When Done is a Telegram Bot and CLI tool that allows the user to enable push 
+notifications for long-running processes over the Telegram Bot API.
+
+* Bot Commands
+| Command  | Functionality                  |
+|----------+--------------------------------|
+| start    | register with the Telegram Bot |
+| progress | Get output for a given process |
+
+* CLI interface
+#+BEGIN_SRC sh
+awd - Alert When Done
+
+A simple command wrapper that will send a Telegram push notification
+when a process completes.
+
+Usage:
+    awd [OPTIONS] -- <cmd>...
+
+Options:
+    -p <pid>  watch pid
+#+END_SRC
+
